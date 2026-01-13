@@ -2,6 +2,7 @@
   "name": "wh-library",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://orangedesigner97.github.io/wh-library",
   "dependencies": {
     "@testing-library/dom": "^10.4.1",
     "@testing-library/jest-dom": "^6.9.1",
@@ -18,7 +19,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "deploy-storybook": "npm run build-storybook && gh-pages -d storybook-static"
   },
   "eslintConfig": {
     "extends": [
@@ -47,6 +49,7 @@
     "@storybook/react-webpack5": "^10.1.11",
     "@vitest/mocker": "^4.0.16",
     "eslint-plugin-storybook": "^10.1.11",
+    "gh-pages": "^6.3.0",
     "prop-types": "^15.8.1",
     "sass": "^1.97.2",
     "storybook": "^10.1.11",
