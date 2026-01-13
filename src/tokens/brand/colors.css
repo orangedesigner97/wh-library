@@ -1,0 +1,175 @@
+/**
+ * Brand Color Tokens - William Hill (Tier 2)
+ * Semantic color mappings from base colors to brand roles
+ * Based on Mode 1.tokens 3.json structure
+ * 
+ * These map primitive colors to brand-level semantic names
+ * Use these for brand consistency across products
+ */
+
+@import '../base/colors.css';
+
+:root {
+  /* ========================================
+     PRIMARY BRAND COLORS (Royal Blue)
+     ======================================== */
+  
+  --wh-primary-lightest: var(--wh-color-royal-blue-300);
+  --wh-primary-lighter: var(--wh-color-royal-blue-450);
+  --wh-primary-light: var(--wh-color-royal-blue-650);
+  --wh-primary-mid: var(--wh-color-royal-blue-850);
+  --wh-primary-dark: var(--wh-color-royal-blue-950);
+  --wh-primary-darker: var(--wh-color-royal-blue-1000);
+  --wh-primary-darkest: var(--wh-color-royal-blue-1050);
+
+  /* ========================================
+     SECONDARY BRAND COLORS (Gold)
+     ======================================== */
+  
+  --wh-secondary-lightest: var(--wh-color-gold-150);
+  --wh-secondary-lighter: var(--wh-color-gold-250);
+  --wh-secondary-light: var(--wh-color-gold-350);
+  --wh-secondary-mid: var(--wh-color-gold-500);
+  --wh-secondary-dark: var(--wh-color-gold-600);
+  --wh-secondary-darker: var(--wh-color-gold-700);
+  --wh-secondary-darkest: var(--wh-color-gold-850);
+
+  /* ========================================
+     ACCENT 1 (Neon Pink)
+     ======================================== */
+  
+  --wh-accent-1-lightest: var(--wh-color-neon-pink-150);
+  --wh-accent-1-lighter: var(--wh-color-neon-pink-250);
+  --wh-accent-1-light: var(--wh-color-neon-pink-400);
+  --wh-accent-1-mid: var(--wh-color-neon-pink-500);
+  --wh-accent-1-dark: var(--wh-color-neon-pink-700);
+  --wh-accent-1-darker: var(--wh-color-neon-pink-800);
+  --wh-accent-1-darkest: var(--wh-color-neon-pink-950);
+
+  /* ========================================
+     ACCENT 2 (Burnt Orange)
+     ======================================== */
+  
+  --wh-accent-2-lightest: var(--wh-color-burnt-orange-100);
+  --wh-accent-2-lighter: var(--wh-color-burnt-orange-200);
+  --wh-accent-2-light: var(--wh-color-burnt-orange-350);
+  --wh-accent-2-mid: var(--wh-color-burnt-orange-500);
+  --wh-accent-2-dark: var(--wh-color-burnt-orange-650);
+  --wh-accent-2-darker: var(--wh-color-burnt-orange-800);
+  --wh-accent-2-darkest: var(--wh-color-burnt-orange-900);
+
+  /* ========================================
+     ACCENT 3 (Jubilee Purple)
+     ======================================== */
+  
+  --wh-accent-3-lightest: var(--wh-color-jubilee-purple-150);
+  --wh-accent-3-lighter: var(--wh-color-jubilee-purple-250);
+  --wh-accent-3-light: var(--wh-color-jubilee-purple-350);
+  --wh-accent-3-mid: var(--wh-color-jubilee-purple-500);
+  --wh-accent-3-dark: var(--wh-color-jubilee-purple-600);
+  --wh-accent-3-darker: var(--wh-color-jubilee-purple-700);
+  --wh-accent-3-darkest: var(--wh-color-jubilee-purple-850);
+
+  /* ========================================
+     ACCENT 4 (Sky Blue)
+     ======================================== */
+  
+  --wh-accent-4-lightest: var(--wh-color-sky-blue-100);
+  --wh-accent-4-lighter: var(--wh-color-sky-blue-250);
+  --wh-accent-4-light: var(--wh-color-sky-blue-350);
+  --wh-accent-4-mid: var(--wh-color-sky-blue-450);
+  --wh-accent-4-dark: var(--wh-color-sky-blue-650);
+  --wh-accent-4-darker: var(--wh-color-sky-blue-800);
+  --wh-accent-4-darkest: var(--wh-color-sky-blue-950);
+
+  /* ========================================
+     SYSTEM 1 (Electric Yellow - Success)
+     ======================================== */
+  
+  --wh-system-1-lightest: var(--wh-color-electric-yellow-150);
+  --wh-system-1-lighter: var(--wh-color-electric-yellow-250);
+  --wh-system-1-light: var(--wh-color-electric-yellow-400);
+  --wh-system-1-mid: var(--wh-color-electric-yellow-500);
+  --wh-system-1-dark: var(--wh-color-electric-yellow-650);
+  --wh-system-1-darker: var(--wh-color-electric-yellow-750);
+  --wh-system-1-darkest: var(--wh-color-electric-yellow-900);
+
+  /* ========================================
+     SYSTEM 2 (Forrest Green - Positive)
+     ======================================== */
+  
+  --wh-system-2-lightest: var(--wh-color-forrest-green-150);
+  --wh-system-2-lighter: var(--wh-color-forrest-green-250);
+  --wh-system-2-light: var(--wh-color-forrest-green-400);
+  --wh-system-2-mid: var(--wh-color-forrest-green-550);
+  --wh-system-2-dark: var(--wh-color-forrest-green-650);
+  --wh-system-2-darker: var(--wh-color-forrest-green-850);
+  --wh-system-2-darkest: var(--wh-color-forrest-green-950);
+
+  /* ========================================
+     SYSTEM 3 (Watermelon Red - Error)
+     ======================================== */
+  
+  --wh-system-3-lightest: var(--wh-color-watermelon-red-100);
+  --wh-system-3-lighter: var(--wh-color-watermelon-red-200);
+  --wh-system-3-light: var(--wh-color-watermelon-red-400);
+  --wh-system-3-mid: var(--wh-color-watermelon-red-550);
+  --wh-system-3-dark: var(--wh-color-watermelon-red-700);
+  --wh-system-3-darker: var(--wh-color-watermelon-red-800);
+  --wh-system-3-darkest: var(--wh-color-watermelon-red-950);
+
+  /* ========================================
+     SYSTEM 4 (Shock Orange - Warning)
+     ======================================== */
+  
+  --wh-system-4-lightest: var(--wh-color-shock-orange-150);
+  --wh-system-4-lighter: var(--wh-color-shock-orange-200);
+  --wh-system-4-light: var(--wh-color-shock-orange-400);
+  --wh-system-4-mid: var(--wh-color-shock-orange-550);
+  --wh-system-4-dark: var(--wh-color-shock-orange-650);
+  --wh-system-4-darker: var(--wh-color-shock-orange-750);
+  --wh-system-4-darkest: var(--wh-color-shock-orange-900);
+
+  /* ========================================
+     NEUTRAL 1 (Dove Grey)
+     ======================================== */
+  
+  --wh-neutral-1-lightest: var(--wh-color-dove-grey-150);
+  --wh-neutral-1-lighter: var(--wh-color-dove-grey-250);
+  --wh-neutral-1-light: var(--wh-color-dove-grey-350);
+  --wh-neutral-1-mid: var(--wh-color-dove-grey-450);
+  --wh-neutral-1-dark: var(--wh-color-dove-grey-600);
+  --wh-neutral-1-darker: var(--wh-color-dove-grey-700);
+  --wh-neutral-1-darkest: var(--wh-color-dove-grey-850);
+
+  /* ========================================
+     NEUTRAL 2 (Iron Grey)
+     ======================================== */
+  
+  --wh-neutral-2-lightest: var(--wh-color-iron-grey-100);
+  --wh-neutral-2-lighter: var(--wh-color-iron-grey-250);
+  --wh-neutral-2-light: var(--wh-color-iron-grey-400);
+  --wh-neutral-2-mid: var(--wh-color-iron-grey-600);
+  --wh-neutral-2-dark: var(--wh-color-iron-grey-750);
+  --wh-neutral-2-darker: var(--wh-color-iron-grey-850);
+  --wh-neutral-2-darkest: var(--wh-color-iron-grey-950);
+
+  /* ========================================
+     NEUTRAL 3 (Cool Grey)
+     ======================================== */
+  
+  --wh-neutral-3-lightest: var(--wh-color-cool-grey-750);
+  --wh-neutral-3-lighter: var(--wh-color-cool-grey-800);
+  --wh-neutral-3-light: var(--wh-color-cool-grey-850);
+  --wh-neutral-3-mid: var(--wh-color-cool-grey-900);
+  --wh-neutral-3-dark: var(--wh-color-cool-grey-950);
+  --wh-neutral-3-darker: var(--wh-color-cool-grey-1000);
+  --wh-neutral-3-darkest: var(--wh-color-cool-grey-1000);
+
+  /* ========================================
+     BLACK & WHITE
+     ======================================== */
+  
+  --wh-white: var(--wh-color-white);
+  --wh-black: var(--wh-color-black);
+}

@@ -1,0 +1,19 @@
+/**
+ * Brand Stroke Tokens - William Hill (Tier 2)
+ * Semantic stroke/border width scale from Mode 1.tokens 3.json
+ * 
+ * Maps base size tokens to semantic stroke names
+ * Use these for consistent border widths across products
+ */
+
+@import '../base/size.css';
+
+:root {
+  /* ========================================
+     STROKE/BORDER WIDTH SCALE
+     Based on Mode 1.tokens 3.json
+     ======================================== */
+  
+  --wh-stroke-sm: var(--size-05);      /* 1px */
+  --wh-stroke-md: var(--size-10);      /* 2px */
+}

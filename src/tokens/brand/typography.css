@@ -1,0 +1,58 @@
+/**
+ * Brand Typography Tokens - William Hill (Tier 2)
+ * Semantic typography scale from Mode 1.tokens 3.json
+ * 
+ * Includes font families, weights, sizes, and line heights
+ * Use these for consistent typography across products
+ */
+
+@import '../base/size.css';
+
+:root {
+  /* ========================================
+     FONT FAMILIES
+     Based on Mode 1.tokens 3.json
+     ======================================== */
+  
+  --wh-font-family-heading: 'Relative', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  --wh-font-family-body: 'Relative', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  --wh-font-family-caption: 'Relative', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  --wh-font-family-label: 'Relative', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  
+  /* ========================================
+     FONT WEIGHTS
+     Based on Mode 1.tokens 3.json
+     ======================================== */
+  
+  --wh-font-weight-regular: 400;
+  --wh-font-weight-semibold: 600;
+  --wh-font-weight-bold: 700;
+  
+  /* ========================================
+     FONT SIZES
+     Based on Mode 1.tokens 3.json
+     ======================================== */
+  
+  --wh-font-size-xs: var(--size-50);     /* 12px */
+  --wh-font-size-sm: var(--size-55);     /* 14px */
+  --wh-font-size-md: var(--size-60);     /* 16px */
+  --wh-font-size-lg: var(--size-65);     /* 18px */
+  --wh-font-size-xl: var(--size-70);     /* 20px */
+  --wh-font-size-2xl: var(--size-80);    /* 24px */
+  --wh-font-size-3xl: var(--size-90);    /* 28px */
+  --wh-font-size-4xl: var(--size-100);   /* 32px */
+  
+  /* ========================================
+     LINE HEIGHTS
+     Based on Mode 1.tokens 3.json
+     ======================================== */
+  
+  --wh-line-height-xs: var(--size-60);   /* 16px */
+  --wh-line-height-sm: var(--size-70);   /* 20px */
+  --wh-line-height-md: var(--size-80);   /* 24px */
+  --wh-line-height-lg: var(--size-90);   /* 28px */
+  --wh-line-height-xl: var(--size-100);  /* 32px */
+  --wh-line-height-2xl: var(--size-110); /* 36px */
+  --wh-line-height-3xl: var(--size-120); /* 40px */
+  --wh-line-height-4xl: var(--size-130); /* 44px */
+}

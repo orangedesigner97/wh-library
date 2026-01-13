@@ -1,0 +1,188 @@
+/**
+ * Mapped Tokens - William Hill (Tier 3)
+ * Component-specific token mappings for Core & Sports
+ * Based on William Hill.tokens.json structure
+ * 
+ * These map brand colors to specific UI component usage
+ * Use these in your components for consistent implementation
+ */
+
+@import '../brand/colors.css';
+
+:root {
+  /* ========================================
+     BACKGROUND TOKENS
+     ======================================== */
+  
+  --wh-background-01: var(--wh-white);
+  --wh-background-02: var(--wh-neutral-2-lightest);
+  --wh-background-03: var(--wh-neutral-2-lighter);
+  --wh-background-04: var(--wh-primary-mid);
+  --wh-background-05: var(--wh-primary-darker);
+  --wh-background-concession: var(--wh-secondary-mid);
+  --wh-background-critical-info: var(--wh-accent-4-mid);
+  --wh-background-critical-success: var(--wh-system-2-darker);
+  --wh-background-critical-warning: var(--wh-system-4-darker);
+  --wh-background-critical-error: var(--wh-system-3-dark);
+  --wh-background-critical-neutral: var(--wh-neutral-2-darker);
+  --wh-background-info: var(--wh-accent-4-lighter);
+  --wh-background-success: var(--wh-system-2-lightest);
+  --wh-background-warning: var(--wh-system-1-lightest);
+  --wh-background-error: var(--wh-system-3-lightest);
+  --wh-background-neutral: var(--wh-neutral-1-mid);
+
+  /* ========================================
+     BORDER TOKENS
+     ======================================== */
+  
+  --wh-border-01: var(--wh-neutral-2-lighter);
+  --wh-border-02: var(--wh-neutral-2-light);
+  --wh-border-03: var(--wh-secondary-dark);
+  --wh-border-04: var(--wh-neutral-1-darkest);
+  --wh-border-05: var(--wh-primary-dark);
+  --wh-border-disabled: var(--wh-neutral-2-darkest);
+  --wh-border-divider: var(--wh-neutral-2-light);
+  --wh-border-divider-inverted: var(--wh-primary-mid);
+  --wh-border-concession: var(--wh-secondary-mid);
+  --wh-border-info: var(--wh-accent-4-mid);
+  --wh-border-warning: var(--wh-system-4-mid);
+  --wh-border-success: var(--wh-system-2-mid);
+  --wh-border-error: var(--wh-system-3-mid);
+
+  /* ========================================
+     TEXT TOKENS
+     ======================================== */
+  
+  --wh-text-primary: var(--wh-primary-mid);
+  --wh-text-secondary: var(--wh-neutral-1-mid);
+  --wh-text-placeholder: var(--wh-neutral-1-mid);
+  --wh-text-disabled: var(--wh-neutral-1-lighter);
+  --wh-text-disabled-inverted: var(--wh-neutral-1-lighter);
+  --wh-text-on-colour-primary: var(--wh-white);
+  --wh-text-on-colour-secondary: var(--wh-neutral-2-mid);
+  --wh-text-on-colour-concessions: var(--wh-secondary-darkest);
+  --wh-text-concessions: var(--wh-secondary-darkest);
+  --wh-text-inverted: var(--wh-neutral-2-lighter);
+  --wh-text-info: var(--wh-accent-4-mid);
+  --wh-text-warning: var(--wh-system-4-mid);
+  --wh-text-inverted-warning: var(--wh-system-4-dark);
+  --wh-text-success: var(--wh-system-2-mid);
+  --wh-text-error: var(--wh-system-3-mid);
+
+  /* ========================================
+     LINK TOKENS
+     ======================================== */
+  
+  --wh-link-default: var(--wh-primary-lighter);
+  --wh-link-hover: var(--wh-primary-light);
+  --wh-link-pressed: var(--wh-primary-mid);
+  --wh-link-active: var(--wh-primary-mid);
+  --wh-link-disabled: var(--wh-neutral-1-lighter);
+  --wh-link-inverted-default: var(--wh-primary-lightest);
+  --wh-link-inverted-hover: var(--wh-primary-light);
+  --wh-link-inverted-pressed: var(--wh-primary-light);
+  --wh-link-inverted-active: var(--wh-primary-light);
+  --wh-link-inverted-disabled: var(--wh-neutral-1-lighter);
+
+  /* ========================================
+     ICON TOKENS
+     ======================================== */
+  
+  --wh-icon-primary: var(--wh-primary-mid);
+  --wh-icon-secondary: var(--wh-neutral-1-mid);
+  --wh-icon-on-colour: var(--wh-white);
+  --wh-icon-concession: var(--wh-secondary-darkest);
+  --wh-icon-inverted: var(--wh-neutral-2-light);
+  --wh-icon-info: var(--wh-accent-4-mid);
+  --wh-icon-warning: var(--wh-system-4-mid);
+  --wh-icon-success: var(--wh-system-2-mid);
+  --wh-icon-error: var(--wh-system-3-mid);
+  --wh-icon-disabled: var(--wh-neutral-1-lighter);
+  --wh-icon-disabled-inverted: var(--wh-neutral-1-lighter);
+  --wh-icon-inverted-warning: var(--wh-system-4-dark);
+
+  /* ========================================
+     FOCUS TOKENS
+     ======================================== */
+  
+  --wh-focus-default: var(--wh-primary-light);
+  --wh-focus-inverted: var(--wh-primary-lightest);
+
+  /* ========================================
+     FIELD/INPUT TOKENS
+     ======================================== */
+  
+  --wh-field-background-default: var(--wh-white);
+  --wh-field-background-hover: var(--wh-white);
+  --wh-field-background-active: var(--wh-white);
+  --wh-field-background-disabled: var(--wh-neutral-1-lighter);
+  --wh-field-border-default: var(--wh-neutral-1-light);
+  --wh-field-border-hover: var(--wh-neutral-1-mid);
+  --wh-field-border-active: var(--wh-primary-lighter);
+  --wh-field-border-disabled: var(--wh-neutral-1-lighter);
+  --wh-field-border-error: var(--wh-system-3-mid);
+  --wh-field-border-success: var(--wh-system-1-mid);
+
+  /* ========================================
+     BUTTON TOKENS
+     ======================================== */
+  
+  --wh-button-primary-default: var(--wh-primary-lighter);
+  --wh-button-primary-hover: var(--wh-primary-light);
+  --wh-button-primary-pressed: var(--wh-primary-mid);
+  --wh-button-primary-disabled: var(--wh-neutral-2-lightest);
+  --wh-button-secondary-default: var(--wh-secondary-mid);
+  --wh-button-secondary-hover: var(--wh-secondary-dark);
+  --wh-button-secondary-pressed: var(--wh-secondary-darker);
+  --wh-button-secondary-disabled: var(--wh-neutral-2-lightest);
+
+  /* ========================================
+     SELECTOR TOKENS (Checkbox/Radio)
+     ======================================== */
+  
+  --wh-selector-default: var(--wh-neutral-1-lighter);
+  --wh-selector-hover: var(--wh-neutral-1-light);
+  --wh-selector-selected: var(--wh-primary-mid);
+  --wh-selector-disabled: var(--wh-neutral-1-lighter);
+  --wh-selector-concession-default: var(--wh-secondary-mid);
+  --wh-selector-concession-hover: var(--wh-secondary-dark);
+  --wh-selector-concession-selected: var(--wh-primary-mid);
+  --wh-selector-concession-disabled: var(--wh-neutral-1-lighter);
+
+  /* ========================================
+     TAB TOKENS
+     ======================================== */
+  
+  --wh-tab-default: var(--wh-primary-lighter);
+  --wh-tab-hover: var(--wh-primary-light);
+  --wh-tab-selected: var(--wh-primary-mid);
+  --wh-tab-disabled: var(--wh-neutral-1-lighter);
+
+  /* ========================================
+     KEYPAD TOKENS (Gaming)
+     ======================================== */
+  
+  --wh-keypad-default: var(--wh-primary-mid);
+  --wh-keypad-pressed: var(--wh-primary-darkest);
+
+  /* ========================================
+     ODDS TOKENS (Sports)
+     ======================================== */
+  
+  --wh-odds-default: var(--wh-neutral-1-lighter);
+  --wh-odds-hover: var(--wh-neutral-1-light);
+  --wh-odds-selected: var(--wh-primary-mid);
+  --wh-odds-disabled: var(--wh-neutral-1-lighter);
+  --wh-odds-success: var(--wh-system-1-mid);
+
+  /* ========================================
+     BREADCRUMB TOKENS
+     ======================================== */
+  
+  --wh-breadcrumbs-default: var(--wh-neutral-1-mid);
+  --wh-breadcrumbs-hover: var(--wh-primary-mid);
+  --wh-breadcrumbs-active: var(--wh-primary-mid);
+  --wh-breadcrumbs-inverted-default: var(--wh-neutral-2-light);
+  --wh-breadcrumbs-inverted-hover: var(--wh-neutral-2-lighter);
+  --wh-breadcrumbs-inverted-active: var(--wh-white);
+}

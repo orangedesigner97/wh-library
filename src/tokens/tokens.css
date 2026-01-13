@@ -1,0 +1,67 @@
+/**
+ * Design Tokens - Complete System (All Tiers)
+ * Import this file to use the complete design system
+ * 
+ * Token Architecture:
+ * Tier 1: base/colors.css, base/size.css (Primitive values)
+ * Tier 2: brand/colors.css, brand/spacing.css, brand/radius.css, brand/stroke.css, brand/typography.css (Brand semantic mappings)
+ * Tier 3: mapped/colors.css (Component-specific tokens)
+ * 
+ * Usage: color: var(--wh-button-primary-default);
+ */
+
+@import './base/colors.css';
+@import './base/size.css';
+@import './brand/colors.css';
+@import './brand/spacing.css';
+@import './brand/radius.css';
+@import './brand/stroke.css';
+@import './brand/typography.css';
+@import './mapped/colors.css';
+@import './mapped/typography.scss';
+
+:root {
+  /* ========================================
+     LEGACY ALIASES (for backward compatibility)
+     These will be deprecated - use tokens from brand/colors.css and mapped/colors.css instead
+     ======================================== */
+  
+  /* Legacy brand mappings - mapped to new tier 2 tokens */
+  --wh-neutral-primary-lighter: var(--wh-neutral-1-lighter);
+  --wh-neutral-primary-mid: var(--wh-neutral-1-mid);
+  --wh-neutral-secondary-mid: var(--wh-neutral-2-mid);
+  --wh-background-level01: var(--wh-background-01);
+  --wh-background-level02: var(--wh-background-02);
+  --wh-border-level02: var(--wh-border-02);
+  
+  /* ========================================
+     SPACING TOKENS
+     BORDER ======================================== */
+  
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  
+  /* ========================================
+     STROKE/BORDER WIDTH TOKENS
+     ======================================== */
+  
+  --stroke-sm: 1px;
+  --stroke-md: 2px;
+  --stroke-button-subtle: 1px;
+  
+  /* ========================================
+     TYPOGRAPHY TOKENS
+     ======================================== */
+  
+  --font-family-primary: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  
+  --body-xs-font-size: 12px;
+  --body-xs-line-height: 16px;
+  --body-sm-font-size: 14px;
+  --body-sm-line-height: 20px;
+  --body-md-font-size: 16px;
+  --body-md-line-height: 24px;
+}

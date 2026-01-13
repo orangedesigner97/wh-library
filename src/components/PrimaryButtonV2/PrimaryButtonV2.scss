@@ -1,0 +1,181 @@
+/**
+ * PrimaryButtonV2 Component Styles
+ * 
+ * New simplified button implementation based on Figma design specs.
+ * Uses William Hill design tokens for consistency.
+ */
+
+@import '../../tokens/brand/colors.css';
+@import '../../tokens/brand/spacing.css';
+@import '../../tokens/brand/typography.css';
+@import '../../tokens/brand/radius.css';
+
+/* ========================================
+   BASE BUTTON
+   ======================================== */
+
+.primary-button-v2 {
+  /* Layout */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--wh-spacing-2xs);
+  
+  /* Sizing - Default (Medium) */
+  padding: var(--wh-spacing-sm) var(--wh-spacing-lg);
+  
+  /* Typography */
+  font-family: var(--wh-font-family-body);
+  font-size: var(--wh-font-size-sm);
+  font-weight: var(--wh-font-weight-semibold);
+  line-height: var(--wh-line-height-xs);
+  text-align: center;
+  white-space: nowrap;
+  
+  /* Colors - Default variant */
+  background-color: var(--wh-primary-mid);
+  color: var(--wh-neutral-50);
+  
+  /* Border & Shape */
+  border: none;
+  border-radius: var(--wh-radius-xs);
+  
+  /* Interaction */
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease, box-shadow 0.2s ease;
+  
+  /* Misc */
+  box-sizing: border-box;
+  user-select: none;
+  
+  /* Hover state */
+  &:hover:not(&--disabled) {
+    background-color: var(--wh-primary-dark);
+  }
+  
+  /* Active/Pressed state */
+  &:active:not(&--disabled) {
+    background-color: var(--wh-primary-darker);
+    transform: translateY(1px);
+  }
+  
+  /* Focus state */
+  &:focus-visible {
+    outline: 2px solid var(--wh-primary-light);
+    outline-offset: 2px;
+  }
+  
+  /* ========================================
+     LABEL
+     ======================================== */
+  
+  &__label {
+    display: inline-block;
+    position: relative;
+  }
+  
+  /* ========================================
+     SIZE VARIANTS
+     ======================================== */
+  
+  &--small {
+    padding: var(--wh-spacing-2xs) var(--wh-spacing-md);
+    font-size: var(--wh-font-size-xs);
+    line-height: var(--size-55);
+  }
+  
+  &--large {
+    padding: var(--wh-spacing-md) var(--wh-spacing-xl);
+    font-size: var(--wh-font-size-md);
+    line-height: var(--wh-line-height-sm);
+  }
+  
+  /* ========================================
+     COLOR VARIANTS
+     ======================================== */
+  
+  &--secondary {
+    background-color: var(--wh-secondary-mid);
+    color: var(--wh-neutral-900);
+    
+    &:hover:not(.primary-button-v2--disabled) {
+      background-color: var(--wh-secondary-dark);
+    }
+    
+    &:active:not(.primary-button-v2--disabled) {
+      background-color: var(--wh-secondary-darker);
+    }
+    
+    &:focus-visible {
+      outline-color: var(--wh-secondary-light);
+    }
+  }
+  
+  &--success {
+    background-color: var(--wh-success-mid);
+    color: var(--wh-neutral-50);
+    
+    &:hover:not(.primary-button-v2--disabled) {
+      background-color: var(--wh-success-dark);
+    }
+    
+    &:active:not(.primary-button-v2--disabled) {
+      background-color: var(--wh-success-darker);
+    }
+    
+    &:focus-visible {
+      outline-color: var(--wh-success-light);
+    }
+  }
+  
+  &--danger {
+    background-color: var(--wh-error-mid);
+    color: var(--wh-neutral-50);
+    
+    &:hover:not(.primary-button-v2--disabled) {
+      background-color: var(--wh-error-dark);
+    }
+    
+    &:active:not(.primary-button-v2--disabled) {
+      background-color: var(--wh-error-darker);
+    }
+    
+    &:focus-visible {
+      outline-color: var(--wh-error-light);
+    }
+  }
+  
+  /* ========================================
+     DISABLED STATE
+     ======================================== */
+  
+  &--disabled {
+    background-color: var(--wh-neutral-200);
+    color: var(--wh-neutral-500);
+    cursor: not-allowed;
+    opacity: 0.6;
+    
+    &:active {
+      transform: none;
+    }
+  }
+}
+
+/* ========================================
+   RESPONSIVE ADJUSTMENTS
+   ======================================== */
+
+@media (max-width: 768px) {
+  .primary-button-v2 {
+    /* Slightly increase touch target on mobile */
+    min-height: 44px;
+    
+    &--small {
+      min-height: 36px;
+    }
+    
+    &--large {
+      min-height: 52px;
+    }
+  }
+}

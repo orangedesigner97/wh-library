@@ -1,0 +1,33 @@
+/**
+ * Brand Spacing Tokens - William Hill (Tier 2)
+ * Semantic spacing scale from Mode 1.tokens 3.json
+ * 
+ * Maps base size tokens to semantic spacing names
+ * Use these for consistent spacing across products
+ */
+
+@import '../base/size.css';
+
+:root {
+  /* ========================================
+     SPACING SCALE
+     Based on Mode 1.tokens 3.json
+     ======================================== */
+  
+  --wh-spacing-5xs: var(--size-10);    /* 2px */
+  --wh-spacing-4xs: var(--size-20);    /* 4px */
+  --wh-spacing-3xs: var(--size-30);    /* 6px */
+  --wh-spacing-2xs: var(--size-40);    /* 8px */
+  --wh-spacing-1xs: var(--size-45);    /* 10px */
+  --wh-spacing-xs: var(--size-50);     /* 12px */
+  --wh-spacing-sm: var(--size-55);     /* 14px */
+  --wh-spacing-md: var(--size-60);     /* 16px */
+  --wh-spacing-lg: var(--size-70);     /* 20px */
+  --wh-spacing-xl: var(--size-80);     /* 24px */
+  --wh-spacing-2xl: var(--size-90);    /* 28px */
+  --wh-spacing-3xl: var(--size-110);   /* 36px */
+  --wh-spacing-4xl: var(--size-120);   /* 40px */
+  --wh-spacing-5xl: var(--size-160);   /* 56px */
+  --wh-spacing-6xl: var(--size-200);   /* 72px */
+  --wh-spacing-7xl: var(--size-270);   /* 96px */
+}

@@ -1,0 +1,283 @@
+/**
+ * Mapped Typography Tokens - William Hill (Tier 3)
+ * Complete typography styles from Figma style panel
+ * 
+ * Ready-to-use typography classes that can be applied directly to components
+ * Each class combines font-family, size, weight, and line-height
+ */
+
+/* ========================================
+   HEADING STYLES - Ready to Use
+   ======================================== */
+
+/* Heading Large - 24/28 */
+.wh-heading-lg-bold {
+  font-family: var(--wh-font-family-heading);
+  font-size: var(--wh-font-size-2xl);
+  font-weight: var(--wh-font-weight-bold);
+  line-height: var(--wh-line-height-lg);
+}
+
+.wh-heading-lg-semibold {
+  font-family: var(--wh-font-family-heading);
+  font-size: var(--wh-font-size-2xl);
+  font-weight: var(--wh-font-weight-semibold);
+  line-height: var(--wh-line-height-lg);
+}
+
+.wh-heading-lg-regular {
+  font-family: var(--wh-font-family-heading);
+  font-size: var(--wh-font-size-2xl);
+  font-weight: var(--wh-font-weight-regular);
+  line-height: var(--wh-line-height-lg);
+}
+
+/* Heading Medium - 20/24 */
+.wh-heading-md-bold {
+  font-family: var(--wh-font-family-heading);
+  font-size: var(--wh-font-size-xl);
+  font-weight: var(--wh-font-weight-bold);
+  line-height: var(--wh-line-height-md);
+}
+
+.wh-heading-md-semibold {
+  font-family: var(--wh-font-family-heading);
+  font-size: var(--wh-font-size-xl);
+  font-weight: var(--wh-font-weight-semibold);
+  line-height: var(--wh-line-height-md);
+}
+
+.wh-heading-md-regular {
+  font-family: var(--wh-font-family-heading);
+  font-size: var(--wh-font-size-xl);
+  font-weight: var(--wh-font-weight-regular);
+  line-height: var(--wh-line-height-md);
+}
+
+/* Heading Small - 18/22 */
+.wh-heading-sm-bold {
+  font-family: var(--wh-font-family-heading);
+  font-size: var(--wh-font-size-lg);
+  font-weight: var(--wh-font-weight-bold);
+  line-height: var(--size-75);
+}
+
+.wh-heading-sm-semibold {
+  font-family: var(--wh-font-family-heading);
+  font-size: var(--wh-font-size-lg);
+  font-weight: var(--wh-font-weight-semibold);
+  line-height: var(--size-75);
+}
+
+.wh-heading-sm-regular {
+  font-family: var(--wh-font-family-heading);
+  font-size: var(--wh-font-size-lg);
+  font-weight: var(--wh-font-weight-regular);
+  line-height: var(--size-75);
+}
+
+/* Heading Extra Small - 16/20 */
+.wh-heading-xs-bold {
+  font-family: var(--wh-font-family-heading);
+  font-size: var(--wh-font-size-md);
+  font-weight: var(--wh-font-weight-bold);
+  line-height: var(--wh-line-height-sm);
+}
+
+.wh-heading-xs-semibold {
+  font-family: var(--wh-font-family-heading);
+  font-size: var(--wh-font-size-md);
+  font-weight: var(--wh-font-weight-semibold);
+  line-height: var(--wh-line-height-sm);
+}
+
+.wh-heading-xs-regular {
+  font-family: var(--wh-font-family-heading);
+  font-size: var(--wh-font-size-md);
+  font-weight: var(--wh-font-weight-regular);
+  line-height: var(--wh-line-height-sm);
+}
+
+/* ========================================
+   BODY STYLES - Ready to Use
+   ======================================== */
+
+/* Body Large - 14/16 */
+.wh-body-lg-bold {
+  font-family: var(--wh-font-family-body);
+  font-size: var(--wh-font-size-sm);
+  font-weight: var(--wh-font-weight-bold);
+  line-height: var(--wh-line-height-xs);
+}
+
+.wh-body-lg-ui-bold {
+  font-family: var(--wh-font-family-body);
+  font-size: var(--wh-font-size-sm);
+  font-weight: var(--wh-font-weight-bold);
+  line-height: var(--wh-line-height-xs);
+}
+
+.wh-body-lg-semibold {
+  font-family: var(--wh-font-family-body);
+  font-size: var(--wh-font-size-sm);
+  font-weight: var(--wh-font-weight-semibold);
+  line-height: var(--wh-line-height-xs);
+}
+
+.wh-body-lg-ui-semibold {
+  font-family: var(--wh-font-family-body);
+  font-size: var(--wh-font-size-sm);
+  font-weight: var(--wh-font-weight-semibold);
+  line-height: var(--wh-line-height-xs);
+}
+
+.wh-body-lg-regular {
+  font-family: var(--wh-font-family-body);
+  font-size: var(--wh-font-size-sm);
+  font-weight: var(--wh-font-weight-regular);
+  line-height: var(--wh-line-height-xs);
+}
+
+.wh-body-lg-ui-regular {
+  font-family: var(--wh-font-family-body);
+  font-size: var(--wh-font-size-sm);
+  font-weight: var(--wh-font-weight-regular);
+  line-height: var(--wh-line-height-xs);
+}
+
+/* Body Small - 12/16 */
+.wh-body-sm-bold {
+  font-family: var(--wh-font-family-body);
+  font-size: var(--wh-font-size-xs);
+  font-weight: var(--wh-font-weight-bold);
+  line-height: var(--wh-line-height-xs);
+}
+
+.wh-body-sm-ui-bold {
+  font-family: var(--wh-font-family-body);
+  font-size: var(--wh-font-size-xs);
+  font-weight: var(--wh-font-weight-bold);
+  line-height: var(--wh-line-height-xs);
+}
+
+.wh-body-sm-semibold {
+  font-family: var(--wh-font-family-body);
+  font-size: var(--wh-font-size-xs);
+  font-weight: var(--wh-font-weight-semibold);
+  line-height: var(--wh-line-height-xs);
+}
+
+.wh-body-sm-ui-semibold {
+  font-family: var(--wh-font-family-body);
+  font-size: var(--wh-font-size-xs);
+  font-weight: var(--wh-font-weight-semibold);
+  line-height: var(--wh-line-height-xs);
+}
+
+.wh-body-sm-regular {
+  font-family: var(--wh-font-family-body);
+  font-size: var(--wh-font-size-xs);
+  font-weight: var(--wh-font-weight-regular);
+  line-height: var(--wh-line-height-xs);
+}
+
+.wh-body-sm-ui-regular {
+  font-family: var(--wh-font-family-body);
+  font-size: var(--wh-font-size-xs);
+  font-weight: var(--wh-font-weight-regular);
+  line-height: var(--wh-line-height-xs);
+}
+
+/* ========================================
+   CAPTION STYLES - Ready to Use
+   ======================================== */
+
+/* Caption - 10/12 */
+.wh-caption-bold {
+  font-family: var(--wh-font-family-caption);
+  font-size: var(--size-45);
+  font-weight: var(--wh-font-weight-bold);
+  line-height: var(--size-50);
+}
+
+.wh-caption-ui-bold {
+  font-family: var(--wh-font-family-caption);
+  font-size: var(--size-45);
+  font-weight: var(--wh-font-weight-bold);
+  line-height: var(--size-50);
+}
+
+.wh-caption-semibold {
+  font-family: var(--wh-font-family-caption);
+  font-size: var(--size-45);
+  font-weight: var(--wh-font-weight-semibold);
+  line-height: var(--size-50);
+}
+
+.wh-caption-ui-semibold {
+  font-family: var(--wh-font-family-caption);
+  font-size: var(--size-45);
+  font-weight: var(--wh-font-weight-semibold);
+  line-height: var(--size-50);
+}
+
+.wh-caption-regular {
+  font-family: var(--wh-font-family-caption);
+  font-size: var(--size-45);
+  font-weight: var(--wh-font-weight-regular);
+  line-height: var(--size-50);
+}
+
+.wh-caption-ui-regular {
+  font-family: var(--wh-font-family-caption);
+  font-size: var(--size-45);
+  font-weight: var(--wh-font-weight-regular);
+  line-height: var(--size-50);
+}
+
+/* ========================================
+   LABEL STYLES - Ready to Use
+   ======================================== */
+
+/* Label - 8/8 */
+.wh-label-bold {
+  font-family: var(--wh-font-family-label);
+  font-size: var(--size-40);
+  font-weight: var(--wh-font-weight-bold);
+  line-height: var(--size-40);
+}
+
+.wh-label-ui-bold {
+  font-family: var(--wh-font-family-label);
+  font-size: var(--size-40);
+  font-weight: var(--wh-font-weight-bold);
+  line-height: var(--size-40);
+}
+
+.wh-label-semibold {
+  font-family: var(--wh-font-family-label);
+  font-size: var(--size-40);
+  font-weight: var(--wh-font-weight-semibold);
+  line-height: var(--size-40);
+}
+
+.wh-label-ui-semibold {
+  font-family: var(--wh-font-family-label);
+  font-size: var(--size-40);
+  font-weight: var(--wh-font-weight-semibold);
+  line-height: var(--size-40);
+}
+
+.wh-label-regular {
+  font-family: var(--wh-font-family-label);
+  font-size: var(--size-40);
+  font-weight: var(--wh-font-weight-regular);
+  line-height: var(--size-40);
+}
+
+.wh-label-ui-regular {
+  font-family: var(--wh-font-family-label);
+  font-size: var(--size-40);
+  font-weight: var(--wh-font-weight-regular);
+  line-height: var(--size-40);
+}

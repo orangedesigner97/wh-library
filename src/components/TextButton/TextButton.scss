@@ -1,0 +1,156 @@
+/* Text Button Component Styles */
+@import '../../tokens/tokens.css';
+@import '../../tokens/mapped/typography.scss';
+
+.text-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  padding: 0;
+}
+
+/* Size Variants */
+.text-btn--small {
+  @extend .wh-body-sm-semibold;
+  gap: var(--wh-spacing-4xs);
+}
+
+.text-btn--medium {
+  @extend .wh-body-sm-semibold;
+  gap: var(--wh-spacing-4xs);
+}
+
+.text-btn--large {
+  @extend .wh-body-lg-semibold;
+  gap: var(--wh-spacing-2xs);
+}
+
+.text-btn--extra-large {
+  @extend .wh-heading-xs-semibold;
+  gap: var(--wh-spacing-2xs);
+}
+
+/* ========================================
+   VARIANT: DEFAULT
+   ======================================== */
+.text-btn--default {
+  color: var(--wh-link-default);
+
+  .text-btn__icon {
+    color: var(--wh-icon-primary);
+  }
+}
+
+.text-btn--default:hover:not(:disabled) {
+  color: var(--wh-link-hover);
+
+  .text-btn__icon {
+    color: var(--wh-icon-primary);
+  }
+}
+
+.text-btn--default:active:not(:disabled) {
+  color: var(--wh-link-pressed);
+
+  .text-btn__icon {
+    color: var(--wh-icon-primary);
+  }
+}
+
+.text-btn--default:disabled {
+  color: var(--wh-link-disabled);
+
+  .text-btn__icon {
+    color: var(--wh-icon-disabled);
+  }
+}
+
+/* ========================================
+   VARIANT: INVERTED
+   ======================================== */
+.text-btn--inverted {
+  color: var(--wh-link-inverted-default);
+
+  .text-btn__icon {
+    color: var(--wh-icon-inverted);
+  }
+}
+
+.text-btn--inverted:hover:not(:disabled) {
+  color: var(--wh-link-inverted-hover);
+
+  .text-btn__icon {
+    color: var(--wh-icon-inverted);
+  }
+}
+
+.text-btn--inverted:active:not(:disabled) {
+  color: var(--wh-link-inverted-pressed);
+
+  .text-btn__icon {
+    color: var(--wh-icon-inverted);
+  }
+}
+
+.text-btn--inverted:disabled {
+  color: var(--wh-link-inverted-disabled);
+
+  .text-btn__icon {
+    color: var(--wh-icon-disabled-inverted);
+  }
+}
+
+/* ========================================
+   SHARED DISABLED STATE
+   ======================================== */
+.text-btn:disabled {
+  cursor: not-allowed;
+  opacity: 1;
+}
+
+/* Icon Styling */
+.text-btn__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  line-height: 0;
+  
+  img, svg {
+    display: block;
+    flex-shrink: 0;
+  }
+}
+
+.text-btn--small .text-btn__icon,
+.text-btn--medium .text-btn__icon {
+  width: 16px;
+  height: 16px;
+  
+  img, svg {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.text-btn--large .text-btn__icon,
+.text-btn--extra-large .text-btn__icon {
+  width: 20px;
+  height: 20px;
+  
+  img, svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+/* Text Styling */
+.text-btn__text {
+  text-align: center;
+  flex-shrink: 0;
+  text-decoration: underline;
+}

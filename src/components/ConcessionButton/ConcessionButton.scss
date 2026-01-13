@@ -1,0 +1,297 @@
+/* Concession Button Component Styles */
+@import '../../tokens/tokens.css';
+@import '../../tokens/mapped/typography.scss';
+
+.concession-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border-radius: var(--radius-sm);
+}
+
+/* Size Variants */
+.concession-btn--small {
+  @extend .wh-body-sm-semibold;
+  min-width: 72px;
+  padding: var(--wh-spacing-1xs) var(--wh-spacing-xs);
+  gap: var(--wh-spacing-4xs);
+}
+
+.concession-btn--medium {
+  @extend .wh-body-sm-semibold;
+  min-width: 88px;
+  padding: var(--wh-spacing-1xs) var(--wh-spacing-md);
+  gap: var(--wh-spacing-4xs);
+}
+
+.concession-btn--large {
+  @extend .wh-body-lg-semibold;
+  min-width: 120px;
+  padding: var(--wh-spacing-sm) var(--wh-spacing-lg);
+  gap: var(--wh-spacing-2xs);
+}
+
+.concession-btn--extra-large {
+  @extend .wh-heading-xs-semibold;
+  min-width: 160px;
+  padding: var(--wh-spacing-md, 16px) var(--wh-spacing-lg, 20px);
+  gap: var(--wh-spacing-2xs);
+}
+
+/* ========================================
+   VARIANT: SOLID
+   ======================================== */
+.concession-btn--solid {
+  background-color: var(--wh-button-secondary-default);
+  color: var(--wh-text-concessions);
+  border: none;
+
+  .concession-btn__icon {
+    color: var(--wh-icon-concession);
+  }
+}
+
+.concession-btn--solid:hover:not(:disabled) {
+  background-color: var(--wh-button-secondary-hover);
+
+  .concession-btn__icon {
+    color: var(--wh-icon-concession);
+  }
+}
+
+.concession-btn--solid:active:not(:disabled) {
+  background-color: var(--wh-button-secondary-pressed);
+
+  .concession-btn__icon {
+    color: var(--wh-icon-concession);
+  }
+}
+
+.concession-btn--solid:disabled {
+  background-color: var(--wh-background-level02);
+  color: var(--wh-neutral-secondary-mid);
+
+  .concession-btn__icon {
+    color: var(--wh-icon-disabled);
+  }
+}
+
+/* ========================================
+   VARIANT: OUTLINE DARK
+   ======================================== */
+.concession-btn--outline-dark {
+  background-color: transparent;
+  color: var(--wh-secondary-mid);
+  border: var(--stroke-button-subtle) solid var(--wh-button-secondary-default);
+
+  .concession-btn__icon {
+    color: var(--wh-icon-concession);
+  }
+}
+
+.concession-btn--outline-dark:hover:not(:disabled) {
+  background-color: var(--wh-button-secondary-hover);
+  color: var(--wh-text-concessions);
+  border-color: var(--wh-button-secondary-hover);
+
+  .concession-btn__icon {
+    color: var(--wh-icon-concession);
+  }
+}
+
+.concession-btn--outline-dark:active:not(:disabled) {
+  background-color: var(--wh-button-secondary-pressed);
+  color: var(--wh-text-concessions);
+  border-color: var(--wh-button-secondary-pressed);
+
+  .concession-btn__icon {
+    color: var(--wh-icon-concession);
+  }
+}
+
+.concession-btn--outline-dark:disabled {
+  background-color: transparent;
+  color: var(--wh-neutral-secondary-mid);
+  border: var(--stroke-button-subtle) solid var(--wh-background-level02);
+
+  .concession-btn__icon {
+    color: var(--wh-icon-disabled);
+  }
+}
+
+/* ========================================
+   VARIANT: OUTLINE LIGHT
+   ======================================== */
+.concession-btn--outline-light {
+  background-color: transparent;
+  color: var(--wh-white);
+  border: var(--stroke-button-subtle) solid var(--wh-button-secondary-default);
+
+  .concession-btn__icon {
+    color: var(--wh-icon-inverted);
+  }
+}
+
+.concession-btn--outline-light:hover:not(:disabled) {
+  background-color: var(--wh-button-secondary-hover);
+  color: var(--wh-text-concessions);
+  border-color: var(--wh-button-secondary-hover);
+
+  .concession-btn__icon {
+    color: var(--wh-icon-concession);
+  }
+}
+
+.concession-btn--outline-light:active:not(:disabled) {
+  background-color: var(--wh-button-secondary-pressed);
+  color: var(--wh-text-concessions);
+  border-color: var(--wh-button-secondary-pressed);
+
+  .concession-btn__icon {
+    color: var(--wh-icon-concession);
+  }
+}
+
+.concession-btn--outline-light:disabled {
+  background-color: transparent;
+  color: var(--wh-neutral-secondary-mid);
+  border: var(--stroke-button-subtle) solid var(--wh-background-level02);
+
+  .concession-btn__icon {
+    color: var(--wh-icon-disabled-inverted);
+  }
+}
+
+/* ========================================
+   VARIANT: GHOST DARK
+   ======================================== */
+.concession-btn--ghost-dark {
+  background-color: transparent;
+  color: var(--wh-secondary-mid);
+  border: none;
+
+  .concession-btn__icon {
+    color: var(--wh-icon-concession);
+  }
+}
+
+.concession-btn--ghost-dark:hover:not(:disabled) {
+  background-color: var(--wh-button-secondary-hover);
+  color: var(--wh-text-concessions);
+
+  .concession-btn__icon {
+    color: var(--wh-icon-concession);
+  }
+}
+
+.concession-btn--ghost-dark:active:not(:disabled) {
+  background-color: var(--wh-button-secondary-pressed);
+  color: var(--wh-text-concessions);
+
+  .concession-btn__icon {
+    color: var(--wh-icon-concession);
+  }
+}
+
+.concession-btn--ghost-dark:disabled {
+  background-color: transparent;
+  color: var(--wh-neutral-secondary-mid);
+
+  .concession-btn__icon {
+    color: var(--wh-icon-disabled);
+  }
+}
+
+/* ========================================
+   VARIANT: GHOST LIGHT
+   ======================================== */
+.concession-btn--ghost-light {
+  background-color: transparent;
+  color: var(--wh-white);
+  border: none;
+
+  .concession-btn__icon {
+    color: var(--wh-icon-inverted);
+  }
+}
+
+.concession-btn--ghost-light:hover:not(:disabled) {
+  background-color: var(--wh-button-secondary-hover);
+  color: var(--wh-text-concessions);
+
+  .concession-btn__icon {
+    color: var(--wh-icon-concession);
+  }
+}
+
+.concession-btn--ghost-light:active:not(:disabled) {
+  background-color: var(--wh-button-secondary-pressed);
+  color: var(--wh-text-concessions);
+
+  .concession-btn__icon {
+    color: var(--wh-icon-concession);
+  }
+}
+
+.concession-btn--ghost-light:disabled {
+  background-color: transparent;
+  color: var(--wh-neutral-secondary-mid);
+
+  .concession-btn__icon {
+    color: var(--wh-icon-disabled-inverted);
+  }
+}
+
+/* ========================================
+   SHARED DISABLED STATE
+   ======================================== */
+.concession-btn:disabled {
+  cursor: not-allowed;
+  opacity: 1;
+}
+
+/* Icon Styling */
+.concession-btn__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  line-height: 0;
+  
+  img, svg {
+    display: block;
+    flex-shrink: 0;
+  }
+}
+
+.concession-btn--small .concession-btn__icon,
+.concession-btn--medium .concession-btn__icon {
+  width: 16px;
+  height: 16px;
+  
+  img, svg {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.concession-btn--large .concession-btn__icon,
+.concession-btn--extra-large .concession-btn__icon {
+  width: 20px;
+  height: 20px;
+  
+  img, svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+/* Text Styling */
+.concession-btn__text {
+  white-space: nowrap;
+  text-align: center;
+  flex-shrink: 0;
+}

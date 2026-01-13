@@ -1,0 +1,22 @@
+/**
+ * Brand Radius Tokens - William Hill (Tier 2)
+ * Semantic border radius scale from Mode 1.tokens 3.json
+ * 
+ * Maps base size tokens to semantic radius names
+ * Use these for consistent corner rounding across products
+ */
+
+@import '../base/size.css';
+
+:root {
+  /* ========================================
+     RADIUS SCALE
+     Based on Mode 1.tokens 3.json
+     ======================================== */
+  
+  --wh-radius-1xs: var(--size-10);     /* 2px */
+  --wh-radius-xs: var(--size-20);      /* 4px */
+  --wh-radius-sm: var(--size-40);      /* 8px */
+  --wh-radius-md: var(--size-50);      /* 12px */
+  --wh-radius-lg: var(--size-60);      /* 16px */
+}

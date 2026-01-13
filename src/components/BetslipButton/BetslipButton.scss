@@ -1,0 +1,176 @@
+/* Betslip Button Component Styles */
+@import '../../tokens/tokens.css';
+@import '../../tokens/mapped/typography.scss';
+
+.betslip-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border-radius: var(--radius-sm);
+}
+
+/* Size Variants */
+.betslip-btn--small {
+  @extend .wh-body-sm-semibold;
+  min-width: 72px;
+  padding: var(--wh-spacing-1xs) var(--wh-spacing-xs);
+  gap: var(--wh-spacing-4xs);
+}
+
+.betslip-btn--medium {
+  @extend .wh-body-sm-semibold;
+  min-width: 88px;
+  padding: var(--wh-spacing-1xs) var(--wh-spacing-md);
+  gap: var(--wh-spacing-4xs);
+}
+
+.betslip-btn--large {
+  @extend .wh-body-lg-semibold;
+  min-width: 120px;
+  padding: var(--wh-spacing-sm) var(--wh-spacing-lg);
+  gap: var(--wh-spacing-2xs);
+}
+
+.betslip-btn--extra-large {
+  @extend .wh-heading-xs-semibold;
+  min-width: 160px;
+  padding: var(--wh-spacing-md, 16px) var(--wh-spacing-lg, 20px);
+  gap: var(--wh-spacing-2xs);
+}
+
+/* ========================================
+   VARIANT: ADD (Add to Betslip)
+   ======================================== */
+.betslip-btn--add {
+  background-color: var(--wh-odds-default);
+  color: var(--wh-text-primary);
+  border: var(--stroke-button-subtle) solid var(--wh-border-02);
+
+  .betslip-btn__icon {
+    color: var(--wh-icon-primary);
+  }
+}
+
+.betslip-btn--add:hover:not(:disabled) {
+  background-color: var(--wh-odds-hover);
+  border-color: var(--wh-border-04);
+
+  .betslip-btn__icon {
+    color: var(--wh-icon-primary);
+  }
+}
+
+.betslip-btn--add:active:not(:disabled) {
+  background-color: var(--wh-odds-selected);
+  color: var(--wh-white);
+  border-color: var(--wh-odds-selected);
+
+  .betslip-btn__icon {
+    color: var(--wh-icon-on-colour);
+  }
+}
+
+.betslip-btn--add:disabled {
+  background-color: var(--wh-odds-disabled);
+  color: var(--wh-text-disabled);
+  border-color: var(--wh-border-disabled);
+
+  .betslip-btn__icon {
+    color: var(--wh-icon-disabled);
+  }
+}
+
+/* ========================================
+   VARIANT: REMOVE (Remove from Betslip)
+   ======================================== */
+.betslip-btn--remove {
+  background-color: var(--wh-odds-selected);
+  color: var(--wh-white);
+  border: var(--stroke-button-subtle) solid var(--wh-odds-selected);
+
+  .betslip-btn__icon {
+    color: var(--wh-icon-on-colour);
+  }
+}
+
+.betslip-btn--remove:hover:not(:disabled) {
+  background-color: var(--wh-primary-mid);
+  border-color: var(--wh-primary-mid);
+
+  .betslip-btn__icon {
+    color: var(--wh-icon-on-colour);
+  }
+}
+
+.betslip-btn--remove:active:not(:disabled) {
+  background-color: var(--wh-primary-darker);
+  border-color: var(--wh-primary-darker);
+
+  .betslip-btn__icon {
+    color: var(--wh-icon-on-colour);
+  }
+}
+
+.betslip-btn--remove:disabled {
+  background-color: var(--wh-odds-disabled);
+  color: var(--wh-text-disabled);
+  border-color: var(--wh-border-disabled);
+
+  .betslip-btn__icon {
+    color: var(--wh-icon-disabled);
+  }
+}
+
+/* ========================================
+   SHARED DISABLED STATE
+   ======================================== */
+.betslip-btn:disabled {
+  cursor: not-allowed;
+  opacity: 1;
+}
+
+/* Icon Styling */
+.betslip-btn__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  line-height: 0;
+  
+  img, svg {
+    display: block;
+    flex-shrink: 0;
+  }
+}
+
+.betslip-btn--small .betslip-btn__icon,
+.betslip-btn--medium .betslip-btn__icon {
+  width: 16px;
+  height: 16px;
+  
+  img, svg {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.betslip-btn--large .betslip-btn__icon,
+.betslip-btn--extra-large .betslip-btn__icon {
+  width: 20px;
+  height: 20px;
+  
+  img, svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+/* Text Styling */
+.betslip-btn__text {
+  white-space: nowrap;
+  text-align: center;
+  flex-shrink: 0;
+}
